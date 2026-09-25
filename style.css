@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #333333;
+}
+
+/* Klases selektors */
+.izcelts {
+    color: orange;
+    font-weight: bold;
+}
+
+/* ID selektors */
+#galvenais {
+    color: blue;
+}
+
+/* Tikai navigācijas saites */
+nav a {
+    color: darkblue;
+    text-decoration: none;
+}
+
+/* Kad pele ir virs saites */
+nav a:hover {
+    color: red;
+}
+
+/* Tikai e-pasta lauks */
+input[type="email"] {
+    background-color: lightyellow;
+    border: 2px solid orange;
+}
+
+/* Kaskāde */
+h2 {
+    color: blue;
+}
+
+h2 {
+    color: purple;
+}
+
+/*
+Uzvar otrais noteikums (purple), jo selektori ir vienādi,
+bet otrais noteikums atrodas vēlāk CSS failā.
+*/
+
+/* Specifiskums */
+h1 {
+    color: green;
+}
+
+.izcelts {
+    color: orange;
+}
+
+#galvenais {
+    color: blue;
+}
+
+/*
+Uzvar #galvenais, jo ID selektoram ir lielāks
+specifiskums nekā klases un elementa selektoram.
+*/
